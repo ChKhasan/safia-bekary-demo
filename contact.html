@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact-style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="tp" class="abs-menu">
+            <ul >
+                <li><a href="#">ТАШКЕНТ</a></li>
+                <li><a href="#">О НАС</a></li>
+                <li><a href="menu.html">МЕНЮ</a></li>
+                <li><a href="news.html">НОВОСТИ</a></li>
+                <li><a href="#">РЕСТОРАНЫ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+                <li><a href="#">+998 78 113 40 40</a></li>
+              
+                <li ><ul id="rt">
+                    <li><a href="#"><img src="ic_search.svg" style="height: 32px;" alt=""></a></li>
+                    <li><a href="#"><img src="ic_profile.png" style="height: 32px;" alt=""></a></li>
+                    <li><a href="#"><img src="ic_cart.png" style="height: 32px;" alt=""></a></li>
+                </ul>
+                </li>
+                </ul>
+        </div>
+        <div class="navbar">
+           
+            <div onclick="menu()" class="toggle-m">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <a href="index.html"><img src="logo.svg" alt=""></a>
+            <ul id="ul1">
+                <li><a href="#">ТАШКЕНТ</a></li>
+                <li><a href="#">О НАС</a></li>
+                <li><a href="menu.html">МЕНЮ</a></li>
+                <li><a href="news.html">НОВОСТИ</a></li>
+                <li><a href="#">РЕСТОРАНЫ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+                <li><a href="#">+998 78 113 40 40</a></li>
+                <li onclick="menu3()">
+                    <a href="#" id="select">
+                    <div  id="sel">
+                        РУС
+                       <img src="down-filled-triangular-arrow.png" alt="">
+                    
+                </div>
+                <div id="rtrt" class="options">
+                    <div>
+                    O'zbekcha
+                </div>
+                <div>
+                    Русский
+                </div>
+                <div>
+                    English
+                </div>
+            </div>
+            </a>
+              </li>
+            </ul>
+                <ul id="ul-img">
+                <li><a href="#"><img src="ic_search.svg" style="height: 32px;" alt=""></a></li>
+                <li><a href="#"><img src="ic_profile.png" style="height: 32px;" alt=""></a></li>
+                <li><a href="#"><img src="ic_cart.png" style="height: 32px;" alt=""></a></li>
+            </ul>
+            <!-- <img src="ic_search.svg" style="height: 32px;" alt="">
+            <img src="ic_profile.png" style="height: 32px;" alt="">
+            <img src="ic_cart.png" style="height: 32px;" alt=""> -->
+            
+        </div>
+      
+       
+        
+        <div class="menu-tort">
+            <div class="menu-for1">
+                <h1>
+                    новости
+                </h1>
+            </div>
+
+
+        </div>
+        <div class="glav">
+        
+        
+       
+        <div class="contact-block">
+            <div class="contact1">
+                <div class="news-text">
+                    <p>
+                        У вас возникли вопросы?!
+У моих друзей—операторов всегда есть ответы!
+Звоните нам каждый день с 08:00 до 23:00
+По номеру: 78 113 4040.
+                    </p>
+                    <p>
+                        Мы с радостью поможем оформить вам заказ на вынос или доставку.
+                    </p>
+                    <p>
+                        Доставка осуществляется по всему городу Ташкент. Стоимость зависит от расстояния. Первые  3 километра – 9 000сум, после, каждый последующий по 1 300сум.
+                    </p>
+                    <p>
+                        Режим работы доставки: 09:00 – 22:00.
+                    </p>
+                </div>
+            </div>
+            <div class="contact2">
+                <img src="contacts.png" alt="">
+            </div>
+        </div>
+
+        
+
+        
+    </div>
+   
+
+   
+
+ 
+
+    <div class="info5">
+<div class="rr">
+    <img src="girl.png" alt="">
+
+</div>        <ul>
+            <li><a href="#">ТАШКЕНТ</a></li>
+            <li><a href="#">О НАС</a></li>
+            <li><a href="#">МЕНЮ</a></li>
+            <li><a href="#">НОВОСТИ</a></li>
+            <li><a href="#">РЕСТОРАНЫ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+            <div class="mess">
+                <img src="ic_facebook.png" alt="">
+                <img src="ic_instagram.png" alt="">
+                <img src="ic_telegram.png" alt="">
+            </div>
+            <p>2021 Safia Cafe & Bakery. Все права защищены.</p>
+    </div>
+    </div>
+
+    <script>
+         r = true;
+
+        function menu() {
+            let but = document.getElementById('tp');
+            let but2 = document.getElementById('bt');
+            let but3 = document.getElementById('ct');
+            let but4 = document.getElementById('side');
+
+            but.classList.toggle('top1');
+            but2.classList.toggle('bottom1');
+            but3.classList.toggle('cente');
+            but4.classList.toggle('side1');
+        }
+        function menu3() {
+            r=!r;
+            let but2 = document.getElementById('rtrt');
+              
+            
+            if(r==false){
+            but2.style.display = "block";
+            }
+            else{
+            but2.style.display = "none";
+            }
+
+        }
+    </script>
+</body>
+</html>
