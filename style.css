@@ -7,7 +7,7 @@
 body {
     display: flex;
     justify-content: center;
-    background-color: #f7f7f7;
+    background-color: red;
 }
 @font-face {
     src: url("Gotham Pro Regular.ttf");
