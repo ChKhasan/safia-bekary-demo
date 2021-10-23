@@ -135,6 +135,7 @@ img {
     background-image: url(navbar.png);
     width: 100% ;
 
+    max-width: 1920px;
 
     top: -400px;
     transition: .5s;

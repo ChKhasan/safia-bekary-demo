@@ -80,6 +80,8 @@ img {
     background-image: url(navbar.png);
     width: 100% ;
     top: -400px;
+    max-width: 1920px;
+
     transition: .5s;
     
    
@@ -708,12 +710,14 @@ border-color: #343a40;
     }
     .form {
         flex-direction: column;
+        padding: 40px 10px;
     }
     .form-img {
         margin: 0 auto;
     }
     .form-text {
-        margin: 4rem auto;
+        margin: 4rem 10px;
+        width: 100%;
         
     }
 }

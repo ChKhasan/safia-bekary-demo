@@ -22,7 +22,7 @@ a {
 }
 .container {
     max-width: 1920px;
-    width: 1920px !important;
+    width: 100% !important;
     height: 400px;
     position: relative;
     /* background-color: red; */
@@ -133,9 +133,8 @@ img {
     justify-content: center;
     flex-direction: column;
     background-image: url(navbar.png);
-    
-    width: 100% ;
-
+    width: 100%;
+    max-width: 1920px;
     top: -400px;
     transition: .5s;
 
@@ -830,7 +829,7 @@ border-color: #343a40;
     height: 437px;
     }
 }
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1250px) {
     #ul1 {
         display: none;
     }
