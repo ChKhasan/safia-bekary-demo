@@ -28,6 +28,79 @@ a {
     /* background-color: red; */
     position: relative;
 }
+.profile {
+    width: 30%;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    right: -500px;
+    /* left: 100px; */
+    top: 0;
+    z-index: 9;
+    transition: 1s;
+    border-radius: 5px;
+    border: .5px solid black;
+    opacity: 0;
+}
+.profile2 {
+    transform: translateX(-500px);
+    opacity: 1;
+
+}
+.korzina {
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #f7f7f7;
+}
+.kor_m {
+    font-family: Gotham-Pro;
+    font-weight: 600;
+}
+.pro_card {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.pro_card_left {
+    width: 30%;
+}
+.pro_card_right h4 {
+    font-size: .8rem;
+}
+.pro_card_right p {
+    font-size: .6rem;
+    /* height: 90px; */
+    overflow: hidden;
+    color: #3f3f3f;
+    font-family: Gotham-Pro;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+.pro_card_right {
+    width: 70%;
+    font-family: Gotham-Pro;
+    padding-left: 5px;
+
+}
+.pro_card_left img {
+    width: 100%;
+}
+
+.korzina h1 {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-weight: 600;
+    
+   
+    font-size: 1rem;
+    font-family: Gotham-Pro;
+
+}
 .navbar {
     max-width: 1920px;
     width: 100%!important;
@@ -771,7 +844,17 @@ border-color: #343a40;
     }
 }
 @media screen and (max-width: 800px) {
-
+    .pro_card {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .pro_card_left {
+        width: 100%;
+    }
+    .pro_card_left {
+        width: 100%;
+    }
     .menu-for1 {
         width: 100%;
     }
@@ -779,7 +862,8 @@ border-color: #343a40;
 display: none;   
  }
  .menu-for3 {
-    display: block;   
+    display: block; 
+    margin-top: 100px;  
      }
     .info3 {
         flex-direction: column;
@@ -787,6 +871,8 @@ display: none;
     }
     .glav {
         flex-direction: column;
+    padding: 0 20px;
+
     }
     .cards {
         width: 100%;
@@ -816,7 +902,7 @@ display: none;
     .menu_catigory {
         width: 100%;
         position: static;
-        height: 700px;
+        /* height: 700px; */
     }
     .for-img {
         width: 100%;

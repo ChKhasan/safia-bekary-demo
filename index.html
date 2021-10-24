@@ -9,10 +9,28 @@
 </head>
 <body>
     <div class="container">
+        <div id="pro" class="profile">
+           <div class="korzina">
+               <h1>Корзина</h1>
+               <a href="#" onclick="menu_pro2()" class="kor_m">
+                   x
+               </a>
+           </div>
+           <div class="pro_card">
+               <div class="pro_card_left">
+            <img src="card1.jpg" alt="">
+               </div>
+               <div class="pro_card_right">
+                   <h4>Прага new</h4>
+                   <p>Тонкие шоколадные песочные коржи, прослоенные тонким</p>
+                   <h4>128 000</h4>
+               </div>
+           </div>
+        </div>
         <div id="tp" class="abs-menu">
             <ul >
                 <li><a href="#">ТАШКЕНТ</a></li>
-                <li><a href="#">О НАС</a></li>
+                <li><a href="about.html">О НАС</a></li>
                 <li><a href="menu.html">МЕНЮ</a></li>
                 <li><a href="news.html">НОВОСТИ</a></li>
                 <li><a href="#">РЕСТОРАНЫ</a></li>
@@ -37,7 +55,7 @@
            <a href="#"><img src="logo.svg" alt=""></a> 
             <ul id="ul1">
                 <li><a href="#">ТАШКЕНТ</a></li>
-                <li><a href="#">О НАС</a></li>
+                <li><a href="about.html">О НАС</a></li>
                 <li><a href="menu.html">МЕНЮ</a></li>
                 <li><a href="news.html">НОВОСТИ</a></li>
                 <li><a href="#">РЕСТОРАНЫ</a></li>
@@ -66,8 +84,8 @@
                 </ul>
                 <ul id="ul-img">
                 <li><a href="search.html"><img src="ic_search.svg" style="height: 32px;" alt=""></a></li>
-                <li><a href="#"><img src="ic_profile.png" style="height: 32px;" alt=""></a></li>
-                <li><a href="#"><img src="ic_cart.png" style="height: 32px;" alt=""></a></li>
+                <li><a href="#" ><img src="ic_profile.png" style="height: 32px;" alt=""></a></li>
+                <li><a  onclick="menu_pro()" href="#"><img src="ic_cart.png" style="height: 32px;" alt=""></a></li>
             </ul>
             <!-- <img src="ic_search.svg" style="height: 32px;" alt="">
             <img src="ic_profile.png" style="height: 32px;" alt="">
@@ -894,6 +912,20 @@
             // but2.classList.toggle('bottom1');
             but3.classList.toggle('cente');
             but4.classList.toggle('side1');
+        }
+        function menu_pro() {
+            let but = document.getElementById('pro');
+          
+
+            but.classList.add('profile2');
+           
+        }
+        function menu_pro2() {
+            let but = document.getElementById('pro');
+          
+
+            but.classList.remove('profile2');
+           
         }
         function menu2() {
             r=!r;
